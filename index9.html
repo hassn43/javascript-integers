@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Round-off</title>
+    <script>
+        function displayValues() {
+            var userInput = prompt("Enter a positive integer:");
+
+            var number = parseInt(userInput)
+            if (!isNaN(number) && number > 0) {
+                alert("a. Number: " + number);
+
+                var roundedValue = Math.round(number);
+                alert("b. Round-off Value: " + roundedValue);
+            } else {
+            
+                alert("Please enter a valid positive integer.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Number Round-off</h1>
+    <button onclick="displayValues()">Get Values</button>
+</body>
+</html>
